@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form </title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+
+    <div class="container">
+        <form id="form" novalidate onsubmit="validateForm(event)">
+            <table border="0" cellpadding="10">
+                <tr>
+                    <td>First name:</td>
+                    <td> <input type="text" name=   "" id="n1" placeholder="Enter your First name" class="tag"></td>
+                </tr>
+
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" name="" id="n2" placeholder="Enter your Last name"  class="tag"></td>
+                </tr>
+
+                <tr>
+                    <td>Email:</td>
+                    <td> <input type="text" placeholder="It Should contain @ " id="n3"  class="tag"></td>
+                </tr>
+
+                <tr>
+                    <td>Mobile Number:</td>
+                    <td><input type="number" name="" id="n4" placeholder="It Should contain 10 Digits" max="10"  class="tag"></td>
+                </tr>
+
+                <tr>
+                    <td>Gender:</td>
+                    <td> <input type="radio" name="Gender">MALE  <input type="radio" name="Gender">FEMALE</td>
+                </tr>
+
+                <tr>
+                    <td>Date of Birth:</td>
+                    <td><input type="date" id="n6"></td>
+                </tr>
+
+                <tr>
+                    <td style="display: flex; align-items: start;">Address:</td>
+                    <td><textarea id="n7" placeholder="Enter your Address" rows="7" cols="40"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>City:</td>
+                    <td> <input type="text" id="n8" placeholder="Enter your city name."  class="tag"> </td>
+                </tr>
+
+                <tr>
+                    <td>Area Pin:</td>
+                    <td><input type="number" name="" id="n9" placeholder="Enter your Area Pin"  class="tag"></td>
+                </tr>
+
+                <tr>
+                    <td>State:</td>
+                    <td> <input type="text" name="" id="n10" placeholder="Enter your State"  class="tag"></td>
+                </tr>
+
+                <tr>
+                    <td>Qualification:</td>
+                    <td>
+                        <select id="n11">
+                            <option value="10th Pass">10th Pass</option>
+                            <option value="12th Pass">12th Pass</option>
+                            <option value="BCA">BCA</option>
+                            <option value="BA">BA</option>
+                            <option value="B.com">B.com</option>
+                            <option value="MCA">MCA</option>
+                            <option value="MA">MA</option>
+                            <option value="M.com">M.com</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="display: flex; align-items: start;">Specialization:</td>
+                    <td>
+                        <input type="checkbox" name="Specialization">Computer Science<br>
+                        <input type="checkbox" name="Specialization">Information Technologies<br>
+                        <input type="checkbox" name="Specialization">Computer Architecture<br>
+                        <input type="checkbox" name="Specialization">Tele Communication
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="text" id="n12" placeholder="Enter your Password"  class="tag"></td>
+                </tr>
+                <tr>
+                    <td> <button type="submit">Register</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+<script src="./logic.js"></script>
+</html>
